@@ -5,7 +5,7 @@ import Work from './Work'
 
 const worksData = [
   { 'work': 'Kaggle - Digit Recognizer', 'work_desc': ['It is based on identifying handwritten digits from the "Hello World!" dataset in computer vision (MNIST).'] },
-  { 'work': 'Ceiling Robotic Arm', 'work_desc': ['It is a small prototype of the industrial robotic arm KUKA that helps in the placement of incomming materials to it`s proper destination.'] },
+  { 'work': 'Ceiling Robotic Arm', 'work_desc': ['It is a small prototype of the industrial robotic arm KUKA that helps in the placement of incomming materials to their proper destination.'] },
   { 'work': 'Semi-autonomous obstacle detection bot', 'work_desc': ['It is a bot which traverse based on the obstacle detected using ultrasonic waves.'] },
   { 'work':'Smart blind-stick using Mini-YOLO','work_desc':['It is a blind-stick that can not only detect the obstacle through ultasonic waves but also gives info about the object in voice with he help of camera feature.']},
   { 'work':'Porfolio Website','work_desc':['This portfolio website I designed using Reactjs during my learning phase on Web Technologies.']}, 
