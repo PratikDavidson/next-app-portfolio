@@ -9,7 +9,7 @@ function Award(props) {
                 <BsArrowLeftCircleFill className='cursor-pointer text-gray-600' onClick={props.prevIndex} size={30}/>
             </div>
             <div className="p-5 shadow-2xl rounded-xl">
-                <Image src={props.award} />
+                <Image src={props.award} alt='Img'/>
             </div>
             <div className='flex flex-col justify-center'>
                 <BsArrowRightCircleFill className='cursor-pointer text-gray-600' onClick={props.nextIndex} size={30}/>
