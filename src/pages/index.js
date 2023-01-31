@@ -25,7 +25,7 @@ export default function Home() {
       return ''
     }
   }
-  const about_me = "I'm an AI enthusiastic. Fell in love with DL during Engg. time and since then tryng to explore DL world to the fullest. I have a 3+ years of experience as a Data Analyst in Finance domain (Microsoft - Incentive Compensation) in TCS"
+  const about_me = "I`m an AI enthusiastic. Fell in love with DL during Engg. time and since then tryng to explore DL world to the fullest. I have a 3+ years of experience as a Data Analyst in Finance domain (Microsoft - Incentive Compensation) in TCS"
   return (
     <>
       <Head>
