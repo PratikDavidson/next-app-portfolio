@@ -1,6 +1,5 @@
 {
   "name": "next-app-portfolio",
-  "homepage": "http://PratikDavidson_Portfolio.github.io/",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
   },
   "dependencies": {
     "@next/font": "13.1.6",
