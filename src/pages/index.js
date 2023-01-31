@@ -25,7 +25,7 @@ export default function Home() {
       return ''
     }
   }
-  
+  const about_me = "I'm an AI enthusiastic. Fell in love with DL during Engg. time and since then tryng to explore DL world to the fullest. I have a 3+ years of experience as a Data Analyst in Finance domain (Microsoft - Incentive Compensation) in TCS"
   return (
     <>
       <Head>
@@ -53,7 +53,7 @@ export default function Home() {
           </div>
           <div className='text-center pb-5'>
             <h2 className='text-5xl py-2 text-teal-600 font-medium'><b>Pratik Davidson</b></h2>
-            <p>I'm an AI enthusiastic. Fell in love with DL during Engg. time and since then tryng to explore DL world to the fullest. I have a 3+ years of experience as a Data Analyst in Finance domain (Microsoft - Incentive Compensation) in TCS</p>
+            <p>{about_me}</p>
           </div>
           <div className='text-5xl flex justify-center gap-16 pb-10 text-gray-600'>
             <a href='https://www.linkedin.com/in/pratik-davidson-107732215/'><BsLinkedin className='cursor-pointer'/></a>
