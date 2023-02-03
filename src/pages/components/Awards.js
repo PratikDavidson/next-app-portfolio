@@ -25,7 +25,7 @@ function Awards() {
     const newSkill = isLastSkill ? 0 : currentIndex+1;
     setCurrentIndex(newSkill)
     }
-    console.log(awards)
+
     return (
         <section className="py-20">
             <h2 className='text-center text-5xl text-teal-600'><b>Appreciations</b></h2>

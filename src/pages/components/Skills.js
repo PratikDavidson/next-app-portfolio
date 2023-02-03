@@ -1,4 +1,3 @@
-import { Routes, Route, Link } from "react-router-dom";
 import Skill from "./Skill";
 import { useState } from "react";
 
@@ -30,7 +29,7 @@ function Skills() {
     <section className='py-20'>
       <div className='grid'>
         <h2 className='text-center text-5xl text-teal-600'><b>My Skills</b></h2>
-        {<Skill skill={skillsData[currentIndex]} prevIndex={prevIndex} nextIndex={ nextIndex} />}
+        <Skill skill={skillsData[currentIndex]} prevIndex={prevIndex} nextIndex={ nextIndex} />
       </div>
     </section>  
     )

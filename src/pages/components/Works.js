@@ -31,7 +31,7 @@ function Works() {
     <section className='py-20'>
       <div className='grid'>
         <h2 className='text-center text-5xl text-teal-600'><b>My Work</b></h2>
-        { <Work work={worksData[currentIndex]} prevIndex={prevIndex} nextIndex={ nextIndex} /> }
+        <Work work={worksData[currentIndex]} prevIndex={prevIndex} nextIndex={ nextIndex} />
       </div>
     </section>  
     )

@@ -8,9 +8,9 @@ function Work(props) {
                 <BsArrowLeftCircleFill className='cursor-pointer text-gray-600' onClick={props.prevIndex} size={30}/>
             </div>
             <div>
-                <h3 className='text-lg font-medium pt-2 pb-2'><b>{props.work.work}</b></h3>
+                <h3 className='text-lg font-medium pt-2 pb-2'><b>{props.work['work']}</b></h3>
                 <ul>
-                    {props.work.work_desc.map((work) => { return (<p key={work.toString()}>{work}</p>) })}
+                    {props.work['work_desc'].map((work) => { return (<p key={work.toString()}>{work}</p>) })}
                 </ul>
             </div>
             <div className='flex flex-col justify-center'>
