@@ -1,15 +1,6 @@
 import Skill from "./Skill";
 import { useState } from "react";
 
-const skillsData = [
-  { 'skill_type': 'Programming Skills', 'skills': ['Python', 'Java', 'C', 'SQL', 'HTML+CSS+Javascript with React'] },
-  { 'skill_type': 'Software Skills', 'skills': ['MS Excel', 'PowerBI', 'Jupyter Notebook', 'Google Colab', 'VS Code', 'Spline','Blender','Adobe After Effects'] },
-  { 'skill_type': 'Hardware Skills', 'skills': ['Arduino', 'RaspberryPI'] },
-  {'skill_type':'ML Skills','skills':['Pandas', 'Numpy', 'Matplotlib', 'Seaborn', 'Scikit-learn','Tensorflow + Keras','Streamlit']},
-   
-  ]
-
-
 function Skills() {
 
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -23,6 +14,14 @@ function Skills() {
     const newSkill = isLastSkill ? 0 : currentIndex+1;
     setCurrentIndex(newSkill)
   }
+
+  const skillsData = [
+    { 'skill_type': 'Programming Skills', 'skills': ['Python', 'Java', 'C', 'SQL', 'HTML+CSS+Javascript with React'] },
+    { 'skill_type': 'Software Skills', 'skills': ['MS Excel', 'PowerBI', 'Jupyter Notebook', 'Google Colab', 'VS Code', 'Spline','Blender','Adobe After Effects'] },
+    { 'skill_type': 'Hardware Skills', 'skills': ['Arduino', 'RaspberryPI'] },
+    {'skill_type':'ML Skills','skills':['Pandas', 'Numpy', 'Matplotlib', 'Seaborn', 'Scikit-learn','Tensorflow + Keras','Streamlit']},
+     
+    ]
 
   return (
 

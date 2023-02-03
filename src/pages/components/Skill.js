@@ -9,9 +9,9 @@ function Skill(props) {
                 <BsArrowLeftCircleFill className='cursor-pointer text-gray-600' onClick={props.prevIndex} size={30}/>
             </div>
             <div>
-                <h3 className='text-lg font-medium pt-2 pb-2'><b>{props.skill['skill_type']}</b></h3>
+                <h3 className='text-lg font-medium pt-2 pb-2'><b>{props.skill['skill_type']?props.skill['skill_type']:''}</b></h3>
                 <ul>
-                    {props.skill['skills'].map((skill) => { return (<li key={skill.toString()}>{skill}</li>) })}
+                    {props.skill['skills']?.map((skill) => { return (<li key={skill.toString()}>{skill}</li>) })}
                 </ul>
             </div>
             <div className='flex flex-col justify-center'>
@@ -19,6 +19,10 @@ function Skill(props) {
             </div>
         </div>
     )
+}
+
+Skill.defaultProps = {
+    'skill': { 'skill_type': 'Programming Skills', 'skills': ['Python', 'Java', 'C', 'SQL', 'HTML+CSS+Javascript with React'] }
 }
 
 export default Skill;
