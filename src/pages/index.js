@@ -1,9 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import { BsFillMoonStarsFill, BsFillSunFill, BsLinkedin, BsGithub } from 'react-icons/bs'
-import {GiSkills} from 'react-icons/gi'
-import { SiGmail } from 'react-icons/si'
 import{AiFillInstagram} from 'react-icons/ai'
 import Skills from './components/Skills'
 import Works from './components/Works'
@@ -22,10 +19,10 @@ export default function Home() {
     if (darkMode) {
       return 'dark:bg-gray-900 text-white'
     } else {
-      return ''
+      return 'bg-white text-black'
     }
   }
-  const about_me = "I`m an AI enthusiastic. Fell in love with DL during Engg. time and since then tryng to explore DL world to the fullest. I have a 3+ years of experience as a Data Analyst in Finance domain (Microsoft - Incentive Compensation) in TCS"
+  const about_me = "I'm an AI enthusiastic. Fell in love with DL during Engg. time and since then tryng to explore DL world to the fullest. I have a 3+ years of experience as a Data Analyst in Finance domain (Microsoft - Incentive Compensation) in TCS"
   return (
     <>
       <Head>
@@ -36,7 +33,7 @@ export default function Home() {
         <link href="/styles/globals.css"/>
         {/*<script src="https://cdn.tailwindcss.com"></script>*/}
       </Head>
-      <main className={'divide-y bg-white text-black px-10 font-serif '+ darkModeHandler()}>
+      <main className={'divide-y  px-10 font-serif '+ darkModeHandler()}>
         <section className='min-h-screen'>
           <nav className='py-8 flex justify-between'>
             <h1 className='text-xl'><b>Portfolio</b></h1>
