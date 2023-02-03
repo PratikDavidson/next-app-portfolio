@@ -1,15 +1,15 @@
 
-import SCA from "../../../public/awards/SCA.png"
-import BPS from "../../../public/awards/BPS.png"
-import VLAppreciation from "../../../public/awards/VLAppreciation.png"
+import award_1 from "../../images/SCA.png"
+import award_2 from "../../images/BPS.png"
+import award_3 from "../../images/VLAppreciation.png"
 import { useState } from "react";
 import Award from './Award'
 
 
 const awards = [
-    SCA,
-    BPS,
-    VLAppreciation,
+    award_1,
+    award_2,
+    award_3,
 ]
 
 function Awards() {
@@ -25,7 +25,7 @@ function Awards() {
     const newSkill = isLastSkill ? 0 : currentIndex+1;
     setCurrentIndex(newSkill)
     }
-    
+    console.log(awards)
     return (
         <section className="py-20">
             <h2 className='text-center text-5xl text-teal-600'><b>Appreciations</b></h2>
